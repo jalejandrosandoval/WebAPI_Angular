@@ -88,7 +88,7 @@ Se debe instalar el siguiente paquete:
 Se debe instalar el siguiente paquete:
 
 * Microsoft.AspNetCore.Identity.EntityFrameworkCore -- Version: <b> 3.1.7 </b> ---> Utilizar propiedades como migraciones de Base de datos a través de uno de los 3 métodos: ModelFirst.
-* Microsoft.AspNetCore.Cors -- Version: <b> 2.2.0 </b> ---> Habilitar Conexión con WebApi a traves del Protocolo Cors
+* Microsoft.AspNetCore.Cors -- Version: <b> 2.2.0 </b> ---> Habilitar Conexión con WebApi a traves del Protocolo Cors (Cross-Origin Resource Sharing).
 
  <!-- * Microsoft.AspNetCore.Identity.EntityFrameworkCore --version:???
   * Microsoft.AspNetCore.Mvc.NewtonsoftJson --version:???
