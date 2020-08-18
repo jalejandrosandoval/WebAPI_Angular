@@ -14,6 +14,10 @@ import { EmployeeTypeComponent } from './Components/EmployeeType/employee-type/e
 import { EmployeeTypeCreateComponent } from './Components/EmployeeType/employee-type-create/employee-type-create.component';
 import { EmployeeTypeEditComponent } from './Components/EmployeeType/employee-type-edit/employee-type-edit.component';
 
+//Home
+import { HomeComponent } from './Components/home/home.component';
+import { FooterComponent } from './Components/footer/footer.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +26,9 @@ import { EmployeeTypeEditComponent } from './Components/EmployeeType/employee-ty
     EmployeeEditComponent,
     EmployeeTypeComponent,
     EmployeeTypeCreateComponent,
-    EmployeeTypeEditComponent
+    EmployeeTypeEditComponent,
+    HomeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
