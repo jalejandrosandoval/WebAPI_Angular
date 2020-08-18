@@ -50,6 +50,13 @@ namespace WebApi.Data
 
         }
 
+        /// <summary>
+        /// This Method, calls and import the classe or models from Bussiness_Logic
+        /// </summary>
+        /// <param name="modelBuilder"></param>
+
+        public DbSet<Bussiness_Logic.Models.Employee.Employee_Type> Employee_Type { get; set; }
+
     }
 
 }
