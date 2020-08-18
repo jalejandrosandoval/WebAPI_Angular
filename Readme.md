@@ -6,9 +6,35 @@ Proyecto de un WebApi de tipo Rest, el cual es consumido de un proyecto secundar
 
 <hr>
 
-## Proyecto API_REST
+## Requisitos Previos Para NetCore
 
-Requisitos Previos
+Instalar:
+* vscode o visual studio en la versión de preferencia.
+* NetCore [SDK](https://dotnet.microsoft.com/download/dotnet-core)
+* Instalar paquete de nuggets en cada proyecto por separado. 
+* Microsoft.AspNetCore.Authentication.JwtBearer --version:???
+
+## Requisitos Previos Para Angular
+
+### Instalar NodeJs
+
+Descargar el instalador desde: https://nodejs.org/es/
+Ejecutar el instalador.
+
+### Instalar Angular
+utilizando el mismo **nvm**
+```bash
+npm install -g @angular/cli
+```
+verificar
+```bash
+ng --version
+```
+
+<hr>
+
+
+## Proyecto API_REST
 
 
 ### Bussiness_Logic
@@ -25,6 +51,22 @@ Se compone de la siguiente forma:
        ├─Employee.cs
        └─Employee_Type.cs
 ```
+#### Requisitos Packages
+
+* System.ComponentModel.DataAnnotations --version: 4.7.0
+
+ <!-- * Microsoft.AspNetCore.Identity.EntityFrameworkCore --version:???
+  * Microsoft.AspNetCore.Mvc.NewtonsoftJson --version:???
+    * **VisualStudio PM>** `Install-Package Microsoft.AspNetCore.Mvc.NewtonsoftJson --Version 3.1.2`
+    * **vscode CLI** `dotnet add package Microsoft.AspNetCore.Mvc.NewtonsoftJson --Version 3.1.2`
+  * Microsoft.EntityFrameworkCore" --version:???
+  * Microsoft.EntityFrameworkCore.InMemory --version:???
+    * **VisualStudio PM>** `Install-Package Microsoft.EntityFrameworkCore.InMemory --Version 3.1`
+    * **vscode CLI** 
+    `dotnet add package Microsoft.EntityFrameworkCore.InMemory -Version 3.1`
+  * Microsoft.EntityFrameworkCore.Sqlite --version:???
+  * Microsoft.EntityFrameworkCore.SqlServer --version:???
+  * Microsoft.EntityFrameworkCore.Tools --version:??? -->
 
 ## Proyecto Angular
 
