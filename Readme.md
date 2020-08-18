@@ -103,7 +103,6 @@ Se debe instalar el siguiente paquete:
   * Microsoft.EntityFrameworkCore.SqlServer --version:???
   * Microsoft.EntityFrameworkCore.Tools --version:??? -->
 
-
 ## Proyecto Angular
 
 Sistema de Archivos:
