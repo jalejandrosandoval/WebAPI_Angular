@@ -8,8 +8,23 @@ Proyecto de un WebApi de tipo Rest, el cual es consumido de un proyecto secundar
 
 ## Proyecto API_REST
 
-Sistema de Archivos:
+Requisitos Previos
 
+
+### Bussiness_Logic
+
+Este proyecto es de tipo "Biblioteca de Clases", se realiza, con el fin de centralizar a groso modo, los disitintos modelos y/o metodos que son sensibles en el lado del Backend, con el fin de garantizar una capa adicional de seguridad en el codigo.
+
+Se compone de la siguiente forma:
+
+## File structure
+
+```bash
+└─Models
+    └─Employee
+       ├─Employee.cs
+       └─Employee_Type.cs
+```
 
 ## Proyecto Angular
 
