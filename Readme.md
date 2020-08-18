@@ -23,13 +23,22 @@ Instalar:
 ### Instalar Angular
 Una vez instalado NodeJS, se procede a abrir la consola de NodeJS <b>(Node.js command prompt)</b>, esto es con el fin de ejecutar los comandos para instalar angular y sus dependencias.
 
+* Instalar Angular en su ultima versión:
 ```bash
 npm install -g @angular/cli
 ```
-verificar
+
+* Si se desea, instalar angular en una versión especifica se debe utilizar el siguiente comando:
+```bash
+npm install -g @angular/cli@'N°. Version'
+```
+
+* Para verificar la versión de angular instalada:
+
 ```bash
 ng --version
 ```
+
 <hr>
 
 Este proyecto de desarrollo se subdivide en dos subdesarrollos:  
