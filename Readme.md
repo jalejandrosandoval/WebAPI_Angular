@@ -51,7 +51,7 @@ Este proyecto es de tipo "Biblioteca de Clases", se realiza, con el fin de centr
 
 Se compone de la siguiente forma:
 
-#### Estructura de Archivos
+#### Estructura de Archivos:
 
 ```bash
 └─Models
@@ -59,11 +59,23 @@ Se compone de la siguiente forma:
        ├─Employee.cs
        └─Employee_Type.cs
 ```
-#### Requisitos Packages
+#### Packages or Nugets:
 
-Se debe instalar el siguiente paquete
+Se debe instalar el siguiente paquete:
 
 * System.ComponentModel.DataAnnotations --version: 4.7.0
+
+
+### Web_Api
+
+### Estructura de Archivos:
+
+#### Packages or Nugets:
+
+Se debe instalar el siguiente paquete:
+
+* Microsoft.AspNetCore.Identity.EntityFrameworkCore -- Version: <b> 3.1.7 </b> ---> Utilizar propiedades como migraciones de Base de datos a través de uno de los 3 métodos: ModelFirst.
+* Microsoft.AspNetCore.Cors -- Version: <b> 2.2.0 </b> ---> Habilitar Conexión con WebApi a traves del Protocolo Cors
 
  <!-- * Microsoft.AspNetCore.Identity.EntityFrameworkCore --version:???
   * Microsoft.AspNetCore.Mvc.NewtonsoftJson --version:???
@@ -77,6 +89,7 @@ Se debe instalar el siguiente paquete
   * Microsoft.EntityFrameworkCore.Sqlite --version:???
   * Microsoft.EntityFrameworkCore.SqlServer --version:???
   * Microsoft.EntityFrameworkCore.Tools --version:??? -->
+
 
 ## Proyecto Angular
 
