@@ -70,6 +70,19 @@ Se debe instalar el siguiente paquete:
 
 ### Estructura de Archivos:
 
+```bash
+├─ Controllers
+│   ├─ EmployeeController
+│   └─ EmployeeTypeController
+├─ Data
+│   └─ AppDbContext.cs
+├─ appsettings.Development.json
+├─ appsettings.json
+├─ Startup.cs
+└─ Program.cs
+
+```
+
 #### Packages or Nugets:
 
 Se debe instalar el siguiente paquete:
