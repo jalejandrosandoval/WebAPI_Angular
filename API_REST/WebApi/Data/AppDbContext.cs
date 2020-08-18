@@ -25,7 +25,15 @@ namespace WebApi.Data
 
         }
 
+        /// <summary>
+        /// Model Employee DBContext
+        /// </summary>
         public DbSet<Employee> Employees { get; set; }
+
+        /// <summary>
+        /// Model EmployeType DbContext
+        /// </summary>
+        public DbSet<Employee> Employee_Types { get; set; }
 
         /// <summary>
         /// This Method, calls and import the classe or models from Bussiness_Logic
@@ -34,6 +42,11 @@ namespace WebApi.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Employee>().ToTable("Employees");
+            modelBuilder.Entity<Employee_Type>().ToTable("Employee_Types");
 
         }
 
