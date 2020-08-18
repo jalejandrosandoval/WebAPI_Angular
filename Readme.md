@@ -17,7 +17,7 @@ Instalar:
 
 ### Instalar NodeJs
 
-* Descargar el instalador de [NodeJS] (https://nodejs.org/es/)
+* Descargar el instalador de [NodeJS](https://nodejs.org/es/)
 * Ejecutar el instalador.
 
 ### Instalar Angular
