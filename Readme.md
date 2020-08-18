@@ -9,7 +9,7 @@ Proyecto de un WebApi de tipo Rest, el cual es consumido de un proyecto secundar
 ## Requisitos Previos Para NetCore
 
 Instalar:
-* vscode o visual studio en la versión de preferencia.
+* VScode o Visual Studio en la versión de preferencia.
 * NetCore [SDK](https://dotnet.microsoft.com/download/dotnet-core)
 * Instalar paquete de nuggets en cada proyecto por separado. 
 * Microsoft.AspNetCore.Authentication.JwtBearer --version:???
@@ -30,10 +30,9 @@ verificar
 ```bash
 ng --version
 ```
-
 <hr>
 
-
+Este proyecto de desarrollo se subdivide en dos subdesarrollos:  
 ## Proyecto API_REST
 
 
@@ -53,6 +52,8 @@ Se compone de la siguiente forma:
 ```
 #### Requisitos Packages
 
+Se debe instalar el siguiente paquete
+
 * System.ComponentModel.DataAnnotations --version: 4.7.0
 
  <!-- * Microsoft.AspNetCore.Identity.EntityFrameworkCore --version:???
@@ -71,3 +72,13 @@ Se compone de la siguiente forma:
 ## Proyecto Angular
 
 Sistema de Archivos:
+
+```bash
+└─ Front-Angular
+    ├─e2e
+    ├─node_modules 
+    └─src 
+      ├─app
+      ├─assets
+      └─enviroments
+```
