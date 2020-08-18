@@ -11,18 +11,18 @@ Proyecto de un WebApi de tipo Rest, el cual es consumido de un proyecto secundar
 Instalar:
 * VScode o Visual Studio en la versión de preferencia.
 * NetCore [SDK](https://dotnet.microsoft.com/download/dotnet-core)
-* Instalar paquete de nuggets en cada proyecto por separado. 
-* Microsoft.AspNetCore.Authentication.JwtBearer --version:???
+* Instalar paquete de nuggets en cada proyecto por separado, el cual se describe más adelante. 
 
 ## Requisitos Previos Para Angular
 
 ### Instalar NodeJs
 
-Descargar el instalador desde: https://nodejs.org/es/
-Ejecutar el instalador.
+* Descargar el instalador de [NodeJS] (https://nodejs.org/es/)
+* Ejecutar el instalador.
 
 ### Instalar Angular
-utilizando el mismo **nvm**
+Una vez instalado NodeJS, se procede a abrir la consola de NodeJS <b>(Node.js command prompt)</b>, esto es con el fin de ejecutar los comandos para instalar angular y sus dependencias.
+
 ```bash
 npm install -g @angular/cli
 ```
