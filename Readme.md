@@ -127,7 +127,8 @@ npm install
 * Sin embargo, si se desea realizar desde 0 con la instalación del proyecto desde 0, se deben instalar uno a uno cada uno de los modules a utilizar; en este caso, se utilizará boostrap y algunos otro paquetes.
 
 * * Instalación Boostrap
+Para instalar boostrap se requieren las dependencias de JQUERY y de PopperJS
 
 ```bash
-npm install
+npm i boostrap jquery @popperjs/core
 ```
