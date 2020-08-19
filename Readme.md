@@ -2,8 +2,6 @@
     <h1 align="center"> WebApi Angular </h1>
 </p>
 
-<img align="center" src="./Assets/WebAPI.png" />
-
 Este prototipo, es un proyecto pequeño de microservicio consumido por una aplicación web; donde se centra en la realización de un esquema sencillo de realizar un 2 CRUD básicos de 2 entidades o tablas como lo son Empleados y Tipo de Empleados, las cuales estan relacionadas entre sí, y una de ellas es dependiente de la otra.
 
 
