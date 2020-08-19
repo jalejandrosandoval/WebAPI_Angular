@@ -68,7 +68,15 @@ Junto con la instalación del siguiente paquete, el cual ayuda a la funcionalida
 ```bash
 npm i @angular/animations --save
 ```
-* #### Instalación de FontAwesome -> Notificaciones
+* #### Instalación de Datatables -> Visualizar en tablas info
+
+```bash
+npm install datatables.net --save
+npm install datatables.net-dt --save
+npm install angular-datatables --save
+npm install @types/jquery --save-dev
+npm install @types/datatables.net --save-dev
+```
 
 <hr>
 
