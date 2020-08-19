@@ -14,7 +14,9 @@ Para conectarse y crear una base de datos desde 0 a través de migraciones se de
 
 Allí se reemplaza 'DataBase_Name' por el nombre del servidor local o externo de la base de datos, en cuyo caso debe ser gestionado a través de el SGBD de SQLSERVER (SSMS).
 
-## Inicializar Migraciones
+## Migraciones
+
+### Configuraciones Previas
 
 Se debe tener en cuenta:
 
@@ -70,6 +72,23 @@ public void ConfigureServices(IServiceCollection services)
     );
 
   services.AddControllers();
-  
+
 }
+```
+
+### Sentencias para la Migración
+
+Para ello se debe: 
+* Abrir la consola de admistración de paquetes.
+* Verificar que se encuentre en el Proyecto donde esta <DbContext>.
+* Dar un nombre a la migración.
+
+```bash
+PM> Add-Migration 'NameMigration'
+```
+
+* Actualizar la Base de Datos o en su debido caso, crearla de 0.
+
+```bash
+PM> Update-Database
 ```
