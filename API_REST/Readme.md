@@ -22,54 +22,54 @@ Se debe tener en cuenta:
 
 ```bash
 public void ConfigureServices(IServiceCollection services)
-        {
+{
 
-            // Migrations through DBContext 
+  // Migrations through DBContext
 
-            services.AddDbContext<AppDbContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("DevConectionBD")));
+  services.AddDbContext<AppDbContext>(options =>
+      options.UseSqlServer(
+      Configuration.GetConnectionString("DevConectionBD")));
 
-            // Enable Cors
+  // Enable Cors
 
-            services.AddCors(options =>
-            {
-                options.AddPolicy("AllowSpecificOrigin",
-                     builder =>
-                     {
-                         builder.AllowAnyHeader()
-                         .AllowAnyMethod()
-                         .AllowAnyOrigin()
-                         ;
-                     });
-            });
+  services.AddCors(options =>
+    {
+    options.AddPolicy("AllowSpecificOrigin",
+      builder =>
+      {
+        builder.AllowAnyHeader()
+        .AllowAnyMethod()
+        .AllowAnyOrigin()
+      ;
+    });
+  });
 
-            // Serializable by JSON 
+  // Serializable by JSON
 
-            services.AddControllersWithViews()
-              .AddNewtonsoftJson(options =>
-                  options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
-            );
+  services.AddControllersWithViews()
+    .AddNewtonsoftJson(options =>
+      options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+  );
 
-            //JWT
+  //JWT
 
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                .AddJwtBearer(options =>
-                    options.TokenValidationParameters = new TokenValidationParameters
-                    {
-                        ValidateIssuer = true,
-                        ValidateAudience = true,
-                        ValidateLifetime = true,
-                        ValidateIssuerSigningKey = true,
-                        ValidIssuer = Configuration["Jwt:Issuer"],
-                        ValidAudience = Configuration["Jwt:Issuer"],
-                        IssuerSigningKey = new SymmetricSecurityKey
-                            (Encoding.UTF8.GetBytes(Configuration["Key"])),
-                        ClockSkew = TimeSpan.Zero
+  services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+      options.TokenValidationParameters = new TokenValidationParameters
+      {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = Configuration["Jwt:Issuer"],
+        ValidAudience = Configuration["Jwt:Issuer"],
+        IssuerSigningKey = new SymmetricSecurityKey
+        (Encoding.UTF8.GetBytes(Configuration["Key"])),
+        ClockSkew = TimeSpan.Zero
+      }
+    );
 
-                    }
-            );
-
-            services.AddControllers();
-        }
+  services.AddControllers();
+  
+}
 ```
