@@ -13,3 +13,63 @@ Para conectarse y crear una base de datos desde 0 a través de migraciones se de
 ```
 
 Allí se reemplaza 'DataBase_Name' por el nombre del servidor local o externo de la base de datos, en cuyo caso debe ser gestionado a través de el SGBD de SQLSERVER (SSMS).
+
+## Inicializar Migraciones
+
+Se debe tener en cuenta:
+
+* Realizar las respectivas configuraciones en el archiivo STARTUP. Más exactamente en el metodo ConfigureServices; allí es donde realmente se realizan las configuraciones del Cors, del JWT, de Migracion de BD y de Serializar los archivos por JSON.
+
+```bash
+public void ConfigureServices(IServiceCollection services)
+        {
+
+            // Migrations through DBContext 
+
+            services.AddDbContext<AppDbContext>(options =>
+                options.UseSqlServer(
+                    Configuration.GetConnectionString("DevConectionBD")));
+
+            // Enable Cors
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSpecificOrigin",
+                     builder =>
+                     {
+                         builder.AllowAnyHeader()
+                         .AllowAnyMethod()
+                         .AllowAnyOrigin()
+                         ;
+                     });
+            });
+
+            // Serializable by JSON 
+
+            services.AddControllersWithViews()
+              .AddNewtonsoftJson(options =>
+                  options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+            );
+
+            //JWT
+
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuer = true,
+                        ValidateAudience = true,
+                        ValidateLifetime = true,
+                        ValidateIssuerSigningKey = true,
+                        ValidIssuer = Configuration["Jwt:Issuer"],
+                        ValidAudience = Configuration["Jwt:Issuer"],
+                        IssuerSigningKey = new SymmetricSecurityKey
+                            (Encoding.UTF8.GetBytes(Configuration["Key"])),
+                        ClockSkew = TimeSpan.Zero
+
+                    }
+            );
+
+            services.AddControllers();
+        }
+```
