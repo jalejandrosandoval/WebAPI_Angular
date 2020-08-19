@@ -66,7 +66,7 @@ Se debe instalar el siguiente paquete:
 * System.ComponentModel.DataAnnotations --version: 4.7.0
 
 
-### Web_Api
+## Web_Api
 
 ### Estructura de Archivos:
 
@@ -105,7 +105,7 @@ Se debe instalar el siguiente paquete:
 
 ## Proyecto Angular
 
-Sistema de Archivos:
+### Estructura de Archivos:
 
 ```bash
 └─ Front-Angular
@@ -115,4 +115,19 @@ Sistema de Archivos:
       ├─app
       ├─assets
       └─enviroments
+```
+### NodeModules
+
+* Para instalar los nodemodules de proyecto se debe utilizar el siguiente comando:
+
+```bash
+npm install
+```
+
+* Sin embargo, si se desea realizar desde 0 con la instalación del proyecto desde 0, se deben instalar uno a uno cada uno de los modules a utilizar; en este caso, se utilizará boostrap y algunos otro paquetes.
+
+* * Instalación Boostrap
+
+```bash
+npm install
 ```
