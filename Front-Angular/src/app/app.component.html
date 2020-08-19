@@ -1,23 +1,26 @@
- <div id="wrapper">
+<div id="wrapper">
 
   <div id="content-wrapper" class="d-flex flex-column">
 
-   <div id="content">
+    <app-navbar></app-navbar>
 
-     <div class="container-fluid">
+    <div id="content">
 
-         <main role="main" class="pb-3">
-       
-           <router-outlet></router-outlet>
-       
-         </main>
+      <div class="container-fluid">
 
-     </div>
+        <main role="main" class="pb-4">
 
-   </div>
+          <br>
+          <router-outlet></router-outlet>
 
-   <app-footer></app-footer>
+        </main>
 
- </div>
+      </div>
+
+    </div>
+
+    <app-footer></app-footer>
+
+  </div>
 
 </div>

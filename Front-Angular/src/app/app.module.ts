@@ -17,6 +17,7 @@ import { EmployeeTypeEditComponent } from './Components/EmployeeType/employee-ty
 //Home
 import { HomeComponent } from './Components/home/home.component';
 import { FooterComponent } from './Components/footer/footer.component';
+import { NavbarComponent } from './Components/Menu/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FooterComponent } from './Components/footer/footer.component';
     EmployeeTypeCreateComponent,
     EmployeeTypeEditComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
