@@ -43,14 +43,14 @@ ng --version
 
 Sin embargo, si se desea realizar desde 0 con la instalación del proyecto desde 0, se deben instalar uno a uno cada uno de los modules a utilizar; en este caso, se utilizará boostrap y algunos otro paquetes.
 
-* Instalación de Boostrap -> Estilos
+* Instalación de Boostrap -> Estilos <br>
 Para instalar boostrap se requieren las dependencias de JQUERY y de PopperJS:
 
 ```bash
 npm i boostrap jquery @popperjs/core
 ```
 
-* Instalación de FontAwesome -> Iconos
+* Instalación de FontAwesome -> Iconos <br>
 Para instalar fontawesome basta con la siguiente linea de comando:
 
 ```bash
